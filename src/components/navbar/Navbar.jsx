@@ -1,3 +1,6 @@
+import SearchIcon from "../../assets/search.svg";
+import VectorIcon from "../../assets/vector.svg";
+
 const Navbar = () => {
   return (
     <div className="max-w-screen-xl mx-auto my-4">
@@ -11,11 +14,11 @@ const Navbar = () => {
         </ul>
         <div className="flex gap-2">
           <div className="flex gap-2 bg-[#150B2B0D] px-3 rounded-full">
-            <img src="/src/assets/icons/search.svg" alt="" />
+            <img src={SearchIcon} alt="" />
             <input className="bg-transparent outline-none" type="text" placeholder="Search" />
           </div>
           <div className="p-2 bg-[#0BE58A] rounded-full">
-            <img src="/src/assets/icons/vector.svg" alt="" />
+          <img src={VectorIcon} alt="" />
           </div>
         </div>
       </nav>
