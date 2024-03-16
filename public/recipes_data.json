@@ -1,6 +1,6 @@
 [
   {
-    "recipe_image": "https://example.com/chicken_recipe.jpg",
+    "recipe_image": "https://i.ibb.co/m564C0Q/wholesomeyum-garlic-butter-chicken-1.jpg",
     "recipe_id": "001",
     "recipe_name": "Garlic Butter Chicken",
     "short_description": "Juicy chicken breasts cooked in a flavorful garlic butter sauce.",
@@ -9,7 +9,7 @@
     "calories": 320
   },
   {
-    "recipe_image": "https://example.com/pasta_recipe.jpg",
+    "recipe_image": "https://i.ibb.co/TtshZ1x/creamy-mushroom-pasta.jpg",
     "recipe_id": "002",
     "recipe_name": "Creamy Mushroom Pasta",
     "short_description": "Delicious pasta dish with creamy mushroom sauce.",
@@ -18,7 +18,7 @@
     "calories": 380
   },
   {
-    "recipe_image": "https://example.com/salad_recipe.jpg",
+    "recipe_image": "https://i.ibb.co/dKh8Fcg/greek-salad.jpg",
     "recipe_id": "003",
     "recipe_name": "Greek Salad",
     "short_description": "Fresh and colorful salad with Mediterranean flavors.",
@@ -27,7 +27,7 @@
     "calories": 200
   },
   {
-    "recipe_image": "https://example.com/smoothie_recipe.jpg",
+    "recipe_image": "https://i.ibb.co/7nZX39Y/berry-blast-smoothie.jpg",
     "recipe_id": "004",
     "recipe_name": "Berry Blast Smoothie",
     "short_description": "Refreshing smoothie packed with berries and antioxidants.",
@@ -36,7 +36,7 @@
     "calories": 150
   },
   {
-    "recipe_image": "https://example.com/burger_recipe.jpg",
+    "recipe_image": "https://i.ibb.co/h71rnKT/classic-beef-burger.jpg",
     "recipe_id": "005",
     "recipe_name": "Classic Beef Burger",
     "short_description": "Homemade beef burger with all the classic fixings.",
@@ -45,7 +45,7 @@
     "calories": 450
   },
   {
-    "recipe_image": "https://example.com/pancake_recipe.jpg",
+    "recipe_image": "https://i.ibb.co/grBb8tT/fluffy-pancakes.jpg",
     "recipe_id": "006",
     "recipe_name": "Fluffy Pancakes",
     "short_description": "Light and fluffy pancakes perfect for breakfast.",

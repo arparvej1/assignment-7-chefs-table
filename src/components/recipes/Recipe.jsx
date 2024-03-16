@@ -3,20 +3,18 @@ import ClockIcon from '../../assets/clock.svg';
 import FireIcon from '../../assets/fire.svg';
 
 const Recipe = ({ recipe, wantToCookHandler }) => {
-  const { recipe_name, short_description, ingredients, preparing_time, calories } = recipe;
-
-  // const {wantToCookHandler} = wantToCookHandler;
+  const { recipe_image, recipe_name, short_description, ingredients, preparing_time, calories } = recipe;
 
   return (
     <div className="flex flex-col gap-3 border-2 p-6 rounded-3xl">
-      <img src="/src/assets/banner-img.png" alt="" />
+      <img className='rounded-3xl' src={recipe_image} alt={recipe_name} />
       <h3 className="font-semibold text-xl">{recipe_name}</h3>
       <p className='text-[#878787]'>{short_description}</p>
       <hr />
       <h3 className="font-semibold text-lg">Ingredients: {ingredients.length}</h3>
 
       <ul className="flex flex-col gap-2 text-[#878787]">
-        {ingredients.map((item, id) =><li key={id}>{item}</li>)}
+        {ingredients.map((item, id) => <li key={id}>{item}</li>)}
       </ul>
       <hr />
       <div className='flex gap-4'>
@@ -31,7 +29,7 @@ const Recipe = ({ recipe, wantToCookHandler }) => {
           <p>{calories} calories</p>
         </div>
       </div>
-      <button onClick={() => { wantToCookHandler(recipe) }} className='btn w-2/3 bg-[#0BE58A] font-semibold text-xl'>Want to Cook</button>
+      <button onClick={() => { wantToCookHandler(recipe) }} className='btn w-2/3 bg-[#0BE58A] font-semibold text-xl rounded-3xl'>Want to Cook</button>
     </div>
   );
 };

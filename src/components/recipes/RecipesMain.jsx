@@ -14,6 +14,8 @@ const RecipesMain = () => {
     if (!wantToCookTable.includes(recipe)) {
       newCookTable = [...wantToCookTable, recipe];
       toast.success("Add want to cook!");
+    } else if (newCookTable.length >= 6) {
+      toast.error("Maximum items added!");
     } else {
       toast.warn("Already Added List!");
     }
