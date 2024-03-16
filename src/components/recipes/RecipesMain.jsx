@@ -7,18 +7,29 @@ const RecipesMain = () => {
 
   const [wantToCookTable, setWantToCookTable] = useState([]);
 
-  const wantToCookHandler = (recipe)=>{
+  const wantToCookHandler = (recipe) => {
     let newCookTable = [...wantToCookTable];
-    if(!wantToCookTable.includes(recipe))newCookTable = [...wantToCookTable, recipe];
+    if (!wantToCookTable.includes(recipe)) newCookTable = [...wantToCookTable, recipe];
     setWantToCookTable(newCookTable);
   }
 
   const [currentlyCooking, setCurrentlyCooking] = useState([]);
+  const [totalMinutes, setTotalMinutes] = useState(0);
+  const [totalCalories, setTotalCalories] = useState(0);
 
-  const preparingHandler = (CookingItem)=>{
+  const preparingHandler = (CookingItem) => {
     let newCookingTable = [...currentlyCooking];
-    if(!currentlyCooking.includes(CookingItem))newCookingTable = [...currentlyCooking, CookingItem];
+    let newTotalMinutes = totalMinutes;
+    let newTotalCalories = totalCalories;
+
+    if (!currentlyCooking.includes(CookingItem)) {
+      newCookingTable = [...currentlyCooking, CookingItem];
+      newTotalMinutes = totalMinutes + CookingItem.preparing_time;
+      newTotalCalories = totalCalories + CookingItem.calories;
+    }
     setCurrentlyCooking(newCookingTable);
+    setTotalMinutes(newTotalMinutes);
+    setTotalCalories(newTotalCalories);
   }
 
   return (
@@ -29,12 +40,14 @@ const RecipesMain = () => {
       </p>
       <div className="grid grid-cols-5 gap-5">
         <Recipes
-        wantToCookHandler={wantToCookHandler}
+          wantToCookHandler={wantToCookHandler}
         ></Recipes>
         <RecipesCookPart
-        wantToCookTable={wantToCookTable}
-        currentlyCooking={currentlyCooking}
-        preparingHandler={preparingHandler}
+          wantToCookTable={wantToCookTable}
+          currentlyCooking={currentlyCooking}
+          totalMinutes={totalMinutes}
+          totalCalories={totalCalories}
+          preparingHandler={preparingHandler}
         ></RecipesCookPart>
       </div>
     </div>

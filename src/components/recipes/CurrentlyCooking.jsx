@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
 import CookingData from './CookingData';
 
-const CurrentlyCooking = ({ currentlyCooking }) => {
-  // const { recipe_name, preparing_time, calories } = currentlyCooking;
-  console.log('object', currentlyCooking);
+const CurrentlyCooking = ({ currentlyCooking, totalMinutes, totalCalories }) => {
+
   return (
     <>
       <div className="flex flex-col justify-center items-center gap-4 my-6">
@@ -21,7 +20,7 @@ const CurrentlyCooking = ({ currentlyCooking }) => {
               </tr>
             </thead>
             <tbody>
-
+              
               {/* row 1 */}
               {
                 currentlyCooking.map((item, idx) => (
@@ -35,8 +34,8 @@ const CurrentlyCooking = ({ currentlyCooking }) => {
               <tr className=" bg-[#28282808] font-semibold">
                 <td className="pl-6"></td>
                 <td className="pl-1"></td>
-                <td className="pl-1">Total Time = 45 minutes</td>
-                <td className="pr-6 pl-1">Total Calories = 1050 calories</td>
+                <td className="pl-1">Total Time = {totalMinutes} minutes</td>
+                <td className="pr-6 pl-1">Total Calories = {totalCalories} calories</td>
               </tr>
             </tbody>
           </table>
@@ -47,8 +46,9 @@ const CurrentlyCooking = ({ currentlyCooking }) => {
 };
 
 CurrentlyCooking.propTypes = {
-  currentlyCooking: PropTypes.array
+  currentlyCooking: PropTypes.array,
+  totalMinutes: PropTypes.number,
+  totalCalories: PropTypes.number
 };
-
 
 export default CurrentlyCooking;
