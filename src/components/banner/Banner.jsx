@@ -7,7 +7,7 @@ const Banner = () => {
           class tailored for you!
         </h3>
         <p className="text-[#ffffffB3] text-xl">
-          Learn and Master Basic Programming, Data Structures, Algorithm, OOP, Database and solve 500+ codingproblems to become an exceptionally well world-class Programmer
+        Our blend of Italian and Mediterranean culinary expertise here provides an unforgettable dining experience with exquisite cuisine in an elegant, inviting environment.
         </p>
         <div className="flex gap-5">
           <button className="btn text-black bg-[#0be58a] hover:bg-[#0be58aB3] rounded-full border-none">Explore Now</button>
