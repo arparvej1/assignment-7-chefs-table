@@ -2,10 +2,10 @@
 const WantToCook = () => {
   return (
     <div className="flex flex-col justify-center items-center gap-4 my-6">
-      <h3>Want to cook: 01</h3>
+      <h3 className="font-semibold text-xl lg:text-2xl">Want to cook: 01</h3>
       <hr className="w-4/5 mx-auto" />
       <table className=" w-full">
-        <tr className=" bg-red-500">
+        <tr>
           <th>Name</th>
           <th className="pl-1">Time</th>
           <th>Calories</th>

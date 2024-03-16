@@ -3,9 +3,9 @@ import AccountIcon from "../../assets/account.svg";
 
 const Navbar = () => {
   return (
-    <div className="max-w-screen-xl mx-auto my-4">
+    <div className="max-w-screen-xl mx-2 md:mx-auto my-4">
       <nav className="flex justify-between items-center">
-        <h3 className="font-bold text-2xl">Recipe Calories</h3>
+        <h3 className="font-bold text-xl md:text-2xl">Recipe Calories</h3>
         <ul className="flex gap-5">
           <li><a href="">Home</a></li>
           <li><a href="">Recipes</a></li>
