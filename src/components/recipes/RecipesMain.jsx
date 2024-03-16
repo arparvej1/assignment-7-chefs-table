@@ -11,7 +11,7 @@ const RecipesMain = () => {
 
   const wantToCookHandler = (recipe) => {
     let newCookTable = [...wantToCookTable];
-    if (!wantToCookTable.includes(recipe)){
+    if (!wantToCookTable.includes(recipe)) {
       newCookTable = [...wantToCookTable, recipe];
       toast.success("Add want to cook!");
     } else {
@@ -34,10 +34,20 @@ const RecipesMain = () => {
       newTotalMinutes = totalMinutes + CookingItem.preparing_time;
       newTotalCalories = totalCalories + CookingItem.calories;
       toast("Add to Cooking List!");
+    } else {
+      toast.info("Currently cooking this item!");
     }
     setCurrentlyCooking(newCookingTable);
     setTotalMinutes(newTotalMinutes);
     setTotalCalories(newTotalCalories);
+
+    let newCookTable = [...wantToCookTable];
+    const index = newCookTable.indexOf(CookingItem);
+    if (index > -1) {
+      newCookTable.splice(index, 1);
+    }
+    setWantToCookTable(newCookTable);
+
   }
 
   return (
