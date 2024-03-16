@@ -11,7 +11,7 @@ const RecipesMain = () => {
       </p>
       <div className="grid grid-cols-5 gap-5">
         <Recipes></Recipes>
-        <RecipesCookPart></RecipesCookPart>
+        {/* <RecipesCookPart></RecipesCookPart> */}
       </div>
     </div>
   );

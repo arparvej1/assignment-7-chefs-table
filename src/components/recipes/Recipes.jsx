@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import { useEffect } from 'react';
 import Recipe from './Recipe';
+// import recipes_data from '../../assets/recipes_data.json';
 
 const Recipes = () => {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
-    fetch('/src/assets/recipes_data.json')
+    fetch('recipes_data.json')
       .then(res => res.json())
       .then(data => setRecipes(data))
   }, [])
