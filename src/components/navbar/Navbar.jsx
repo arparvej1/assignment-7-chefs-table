@@ -1,5 +1,5 @@
 import SearchIcon from "../../assets/search.svg";
-import VectorIcon from "../../assets/vector.svg";
+import AccountIcon from "../../assets/account.svg";
 
 const Navbar = () => {
   return (
@@ -18,7 +18,7 @@ const Navbar = () => {
             <input className="bg-transparent outline-none" type="text" placeholder="Search" />
           </div>
           <div className="p-2 bg-[#0BE58A] rounded-full">
-          <img src={VectorIcon} alt="" />
+          <img src={AccountIcon} alt="" />
           </div>
         </div>
       </nav>
