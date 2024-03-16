@@ -28,9 +28,11 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex gap-2 justify-end">
-          <div className="hidden md:block flex gap-2 bg-[#150B2B0D] px-3 rounded-full w-3/5 md:w-auto">
-            <img src={SearchIcon} alt="" />
-            <input className="bg-transparent outline-none" type="text" placeholder="Search" />
+          <div className="hidden md:block">
+            <div className="flex gap-2 bg-[#150B2B0D] px-3 py-2 rounded-full w-3/5 md:w-auto">
+              <img src={SearchIcon} alt="" />
+              <input className="bg-transparent outline-none" type="text" placeholder="Search" />
+            </div>
           </div>
           <div className="p-2 bg-[#0BE58A] rounded-full">
             <img src={AccountIcon} alt="" />
