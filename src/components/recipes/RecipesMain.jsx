@@ -1,6 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Recipes from "./Recipes";
 import RecipesCookPart from "./RecipesCookPart";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const RecipesMain = () => {
@@ -9,7 +11,12 @@ const RecipesMain = () => {
 
   const wantToCookHandler = (recipe) => {
     let newCookTable = [...wantToCookTable];
-    if (!wantToCookTable.includes(recipe)) newCookTable = [...wantToCookTable, recipe];
+    if (!wantToCookTable.includes(recipe)){
+      newCookTable = [...wantToCookTable, recipe];
+      toast.success("Add want to cook!");
+    } else {
+      toast.warn("Already Added List!");
+    }
     setWantToCookTable(newCookTable);
   }
 
@@ -26,6 +33,7 @@ const RecipesMain = () => {
       newCookingTable = [...currentlyCooking, CookingItem];
       newTotalMinutes = totalMinutes + CookingItem.preparing_time;
       newTotalCalories = totalCalories + CookingItem.calories;
+      toast("Add to Cooking List!");
     }
     setCurrentlyCooking(newCookingTable);
     setTotalMinutes(newTotalMinutes);
@@ -50,6 +58,7 @@ const RecipesMain = () => {
           preparingHandler={preparingHandler}
         ></RecipesCookPart>
       </div>
+      <ToastContainer />
     </div>
   );
 };
