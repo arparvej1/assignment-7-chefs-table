@@ -1,8 +1,8 @@
 const Banner = () => {
   return (
-    <div className="max-w-7xl mx-2 md:mx-auto bg-[url('/src/assets/banner-img.png')] bg-cover min-h-[600px] flex rounded-3xl">
-      <div className="flex  flex-col justify-center items-center text-center gap-5 mx-32">
-        <h3 className="text-white font-bold text-5xl">
+    <div className="max-w-7xl mx-2 md:mx-auto bg-[url('/src/assets/banner-img.png')] bg-cover py-10 lg:min-h-[600px] flex rounded-3xl">
+      <div className="flex  flex-col justify-center items-center text-center gap-5 mx-5 md:mx-10 lg:mx-32">
+        <h3 className="text-white font-bold text-3xl lg:text-5xl">
           Discover an exceptional cooking
           class tailored for you!
         </h3>

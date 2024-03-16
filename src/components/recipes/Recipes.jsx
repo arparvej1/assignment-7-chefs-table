@@ -14,7 +14,7 @@ const Recipes = ({wantToCookHandler}) => {
   }, []);
 
   return (
-    <div className="col-span-3 grid grid-cols-1 lg:grid-cols-2 gap-5">
+    <div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-2 gap-5">
       {
         recipes.map(recipe => <Recipe
           key={recipe.recipe_id}

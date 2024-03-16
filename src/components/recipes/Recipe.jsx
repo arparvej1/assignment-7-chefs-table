@@ -6,7 +6,7 @@ const Recipe = ({ recipe, wantToCookHandler }) => {
   const { recipe_image, recipe_name, short_description, ingredients, preparing_time, calories } = recipe;
 
   return (
-    <div className="flex flex-col gap-3 border-2 p-6 rounded-3xl">
+    <div className="flex flex-col gap-3 border-2 p-3 md:p-6 rounded-3xl">
       <img className='rounded-3xl' src={recipe_image} alt={recipe_name} />
       <h3 className="font-semibold text-xl">{recipe_name}</h3>
       <p className='text-[#878787]'>{short_description}</p>

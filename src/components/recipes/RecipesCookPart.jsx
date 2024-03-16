@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const RecipesCookPart = ({ wantToCookTable, currentlyCooking, preparingHandler, totalMinutes, totalCalories }) => {
 
   return (
-    <div className="col-span-2 border-2 rounded-3xl">
+    <div className="col-span-1 lg:col-span-2 border-2 rounded-3xl">
       <WantToCook
         wantToCookTable={wantToCookTable}
         preparingHandler={preparingHandler}

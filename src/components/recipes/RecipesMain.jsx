@@ -53,12 +53,12 @@ const RecipesMain = () => {
   }
 
   return (
-    <div className="max-w-screen-xl mx-auto my-4 flex flex-col gap-5 justify-between items-center">
-      <h3 className="font-bold text-4xl">Our Recipes</h3>
-      <p>
+    <div className="max-w-screen-xl mx-2 lg:mx-auto my-4 flex flex-col gap-5 justify-between items-center">
+      <h3 className="font-bold text-center text-4xl">Our Recipes</h3>
+      <p className="text-center">
         Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus vulputate netus pharetra rhoncus. Egeturna volutpat curabitur elementum mauris aenean neque.
       </p>
-      <div className="grid grid-cols-5 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5">
         <Recipes
           wantToCookHandler={wantToCookHandler}
         ></Recipes>
