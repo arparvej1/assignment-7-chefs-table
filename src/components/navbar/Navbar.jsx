@@ -3,7 +3,7 @@ import AccountIcon from "../../assets/account.svg";
 
 const Navbar = () => {
   return (
-    <div className="max-w-screen-xl mx-2 md:mx-auto my-4">
+    <div className="max-w-screen-xl mx-3 lg:mx-auto my-4">
       <nav className="flex justify-between items-center">
         <div className="dropdown block md:hidden">
           <div tabIndex={0} role="button" className="btn bg-transparent border-none pl-0 pr-1">

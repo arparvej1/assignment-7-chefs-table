@@ -53,9 +53,9 @@ const RecipesMain = () => {
   }
 
   return (
-    <div className="max-w-screen-xl mx-2 lg:mx-auto my-4 flex flex-col gap-5 justify-between items-center">
+    <div className="max-w-screen-xl mx-3 lg:mx-auto my-4 flex flex-col gap-5 justify-between items-center">
       <h3 className="font-bold text-center text-4xl">Our Recipes</h3>
-      <p className="text-center">
+      <p className="text-center w-auto md:w-4/5 lg:w-2/3">
         Indulge in Our Restaurant's Recipes, a curated collection of culinary masterpieces crafted with passion, offering a tantalizing glimpse into our kitchen's artistry and flavorsome creations.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5">
